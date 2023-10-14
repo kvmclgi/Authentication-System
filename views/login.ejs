@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/loginStyle.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/layout.css" />
+    <title>Login</title>
+</head>
+<body>
+    
+    <%- include("partials/header") %>
+    <form class="box" action="/auth/login" method="POST">
+    <h1 class="heading">Login</h1>
+        <div class="heading" class="form-group">
+          <input class="input" type="email" name="email" placeholder="Enter your email" class="form-control" name="email">
+        </div>
+        <div class="form-group">
+          <input class="input" type="password" name="password" placeholder="Enter your password" class="form-control" name="password">
+        </div>
+        
+        <button type="submit" class="submitbutton">Login</button>
+      </form>
+</body>
+</html>

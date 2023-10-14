@@ -1,0 +1,37 @@
+/* Reset some default styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navbar */
+.navbar {
+  height: 8%;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Adds a slight shadow */
+}
+
+/* Style the list and remove list styles */
+.navbar ul {
+  list-style: none;
+  margin: 15px;
+  padding: 0;
+}
+
+/* Style the list items (links) */
+.navbar li {
+  display: inline; /* Display list items horizontally */
+  margin-right: 20px; /* Add some space between links */
+}
+
+/* Style the links */
+.navbar a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #333; /* Set link text color */
+  font-weight: bold; /* Make text bold */
+}
+
+/* Change link color on hover */
+.navbar a:hover {
+  color: #007BFF; /* Change link color on hover */
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <h1 class="heading"> Account Details </h1>
+
+    <div >
+    <% if (locals.user) { %>
+           <h2> Hi <%= user.userName%>! </h2>
+           <p>Your email: <%= user.email %> </p>   
+        
+    <% } %>
+   <a href="/auth/logout"> <button type="submit"  >Log Out</button></a>
+
+</div>
+</body>
+</html>
